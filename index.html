@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio Website</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/2.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#About">Skills</a></li>
+                <li><a href="#About">Experience</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm <span> Parag Gaur </span><br> From Noida</h1>
+        </div> 
+    </div>
+</div>
+
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/6.png">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title"> About Me</h1> 
+               <p> I am Parag Gaur <br>
+                I am 19 years old.<br> I am a student pursuing BTech in
+                Computer Science from Amity Noida.<br> I am a
+                Gamer, Streamer and a Graphics Designer.<br>
+                I am a sports enthusiast, I love playing Cricket,<br>
+                Badminton and Basketball.<br> 
+                I also like working on UI/UX.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Design</span><br>Graphic Designing</li>
+                        <li><span>Digital Marketing</span><br>Social Media Marketing and Management</li>
+                        <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jan 2022 - Nov 2022</span><br>Flawesome - Head Designer</li>
+                        <li><span>May 2022 - June 2023</span><br> Social Media Marketing Intern</li>
+                        <li><span>Feb 2023 - Present</span><br>Brainstorm AMITY - Founder and Graphic Design Head</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+
+</script>
+
+</body>
+</html>
