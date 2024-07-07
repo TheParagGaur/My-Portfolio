@@ -4,8 +4,6 @@ Certainly! Below is a professionally styled and aesthetic README for your GitHub
 
 # Portfolio Website
 
-![Portfolio Banner](https://via.placeholder.com/1000x300.png?text=Your+Banner+Here)
-
 Welcome to the repository for my personal portfolio website, showcasing various projects including those involving machine learning in Python. This README provides an overview of the repository, including setup instructions, project structure, features, and how to contribute.
 
 ## Table of Contents
